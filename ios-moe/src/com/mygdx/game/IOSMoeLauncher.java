@@ -66,13 +66,13 @@ public class IOSMoeLauncher extends IOSApplication.Delegate implements GADReward
     }
 
     @Override
-    @Selector("rewardBasedVideoAdDidFailToLoadWithError:")
+    @Selector("rewardBasedVideoAd:didFailToLoadWithError:")
     public void rewardBasedVideoAdDidFailToLoadWithError(GADRewardBasedVideoAd rewardBasedVideoAd, NSError error) {
         System.out.println("rewardBasedVideoAdDidFailToLoadWithError");
     }
 
     @Override
-    @Selector("rewardBasedVideoAdDidRewardUserWithReward:")
+    @Selector("rewardBasedVideoAd:didRewardUserWithReward:")
     public void rewardBasedVideoAdDidRewardUserWithReward(GADRewardBasedVideoAd rewardBasedVideoAd, GADAdReward reward) {
         System.out.println("rewardBasedVideoAdDidRewardUserWithReward");
     }
